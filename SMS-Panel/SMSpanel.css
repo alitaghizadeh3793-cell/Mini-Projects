@@ -1,0 +1,42 @@
+.conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#message {
+    text-align: right;
+    width: 350px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(250, 235, 215);
+    color: brown;
+    font-size: 1.3rem;
+    border: 3px solid brown;
+    padding: 15px;
+}
+
+#num-of-sms {
+    color: red;
+}
+
+#btn-send {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    padding: 5px 30px;
+    background-color: #8c0000;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 30px;
+}
+
+#btn-send:active{
+    transform: translate(2px, 2px);
+}
