@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding: 25px 150px;
+    background-color: rgb(230, 230, 255);
+    overflow: hidden;
+}
+
+main {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    border-radius: 15px;
+}
+
+section.first a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section.last a {
+    color: black;
+    text-decoration: none;
+}
+
+section.first a:hover {
+    text-decoration: underline;
+}
+
+section.last a:hover {
+    text-decoration: underline;
+}
+
+section.first {
+    background-color: rgb(95, 138, 246);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 150px 0px;
+    border-radius: 15px;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+section.first h1 {
+    font-weight: bold;
+    font-size: 42px;
+}
+
+section.first h3 {
+    font-size: 14px;
+}
+
+section.first button {
+    margin-top: 10px;
+    padding: 8px 40px;
+    font-size: 13px;
+    background-color: transparent;
+    color: #fff;
+    border: 1.5px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+}
+
+section.first button:active {
+    transform: translate(1px, 1px);
+}
+
+section.last {
+    padding: 30px 0px 70px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.last h1 {
+    font-size: 42px;
+}
+
+section.last div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 80%;
+    position: relative;
+}
+
+section.last div input {
+    padding: 10px;
+    padding-right: 30px;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background-color: #eeeeeecc;
+    border-radius: 5px;
+}
+
+section.last div input::placeholder {
+    font-size: 13px;
+}
+
+section.last div span.user {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+section.last div span.pass {
+    position: absolute;
+    right: 10px;
+    top: 75px;
+}
+
+section.last p {
+    font-size: 14px;
+}
+
+section.last button {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    background-color: rgb(95, 138, 246);
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+section.last button:active {
+    transform: translate(1px, 1px);
+}
+
+section.last span.platforms i {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin: 7px;
+    padding: 5px;
+    font-size: 26px;
+}
