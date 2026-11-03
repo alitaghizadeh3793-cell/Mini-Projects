@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: vazir;
+}
+
+.wrapper{
+    max-width: 400px;
+    margin: 100px auto;
+}
+
+.search{
+    position: relative;
+    direction: rtl;
+    user-select: none;
+}
+
+.search input{
+    width: 100%;
+    font-family: inherit;
+    font-size: 18px;
+    height: 45px;
+    border: 1px solid #f39cba;
+    border-radius: 50px;
+    padding: 0 20px;
+    outline: none;
+}
+
+.icon{
+    position: absolute;
+    left: 15px;
+    top: 0;
+    height: 45px;
+    line-height: 50px;
+    font-size: 20px;
+    color: #ff007a;
+    cursor: pointer;
+}
+
+.result-box{
+    max-height: 300px;
+    margin-top: 15px;
+    box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+}
+
+.result-box li{
+    list-style: none;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.result-box li:hover{
+    background-color: #f0f0f0;
+
+}
+
+.search.active .result-box{
+    opacity: 1;
+}
+
+
+
+
+@font-face {
+    font-family: Vazir;
+    src: url(fonts/Vazir.woff)
+}
