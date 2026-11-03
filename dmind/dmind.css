@@ -1,0 +1,1145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    position: relative;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+.header img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 50px 10px 20px;
+}
+
+.header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin-left: 400px;
+}
+
+.header ul li{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(47, 122, 104)
+}
+
+.header ul li a {
+    color: rgb(47, 122, 104);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header ul li a:not(:nth-child(3)):hover {
+    color: rgb(18, 210, 139);
+    cursor: pointer;
+}
+
+.header ul :nth-child(3) {
+    color: #222;
+}
+
+.header div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.header>div {
+    margin-left: 70px;
+}
+
+.header div :first-child {
+    position: relative;
+}
+
+.header div :first-child>span i {
+    padding: 10px;
+    font-size: 28px;
+    color: rgb(0, 107, 23);
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.header div :first-child>span i:hover {
+    color: rgb(18, 210, 139);
+    cursor: pointer;
+}
+
+.header>div :first-child :nth-child(2) {
+    font-size: 9px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background-color: rgb(18, 210, 139);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none {
+    display: none;
+    position: absolute;
+    top: 2.3%;
+    right: 27%;
+    padding: 15px 20px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 20%;
+    border-radius: 5px;
+}
+
+.none a {
+    text-decoration: none;
+    color: #111;
+}
+
+.none p {
+    line-height: 1.3;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.none p:first-child{
+    margin-bottom: 10px;
+}
+
+.none p:last-child{
+    margin-top: 10px;
+}
+
+.none p:hover {
+    color: rgb(18, 210, 139);
+    margin-right: 10px;
+}
+
+.box {
+    background-color: rgb(232, 245, 251);
+    color: rgb(119, 150, 165);
+    padding: 9px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.box :first-child {
+    list-style: none;
+    color: rgb(119, 150, 165);
+    font-size: 28px;
+    margin-left: 2px;
+}
+
+.box> :last-child {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.box> :last-child {
+    text-decoration: none;
+    color: rgb(119, 150, 165);
+}
+
+.fixed {
+    position: fixed;
+    top: 88%;
+    font-size: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+    padding: 20px 0px 30px 0px;
+    color: #111;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.07);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.fixed> :last-child i {
+    transform: rotate(90deg);
+}
+
+main section.first {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+main section.first :first-child {
+    margin-right: 15px;
+}
+
+main section.first :first-child h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+main section.first :first-child p {
+    line-height: 1.7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 15px;
+}
+
+main section.first :first-child a {
+    color: rgb(13, 100, 79);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+main section.first :first-child a button {
+    margin: 30px 15px 0px 0px;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16, 163, 127);
+    color: rgb(13, 100, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+main section.first :first-child a:hover button {
+    cursor: pointer;
+    color: #fff;
+}
+
+main section.first> :last-child {
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+
+main section.second {
+    margin-top: 400px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section.second :first-child {
+    width: 100%;
+    position: relative;
+}
+
+main section.second :first-child video {
+    width: 90%;
+    height: 90%;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+main section.second :first-child span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 90px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+main section.second :last-child {
+    align-self: center;
+}
+
+main section.second :last-child p {
+    width: 90%;
+    margin-right: 50px;
+    line-height: 1.6;
+}
+
+main section.second :last-child a {
+    width: 30%;
+}
+
+main section.second :last-child a button {
+    margin: 50px;
+    width: 30%;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: rgb(18, 92, 95);
+    background-color: rgb(83, 135, 172);
+    transition: 0.3s;
+}
+
+main section.second :last-child a:hover button {
+    color: #fff;
+    cursor: pointer;
+}
+
+main section.third {
+    margin-bottom: 100px;
+}
+
+main section.third div ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+}
+
+main section.third div ul li {
+    list-style-type: none;
+}
+
+main section.third> :first-child {
+    font-size: 84px;
+    font-weight: bold;
+    color: #555;
+}
+
+main section.third> :last-child {
+    font-size: 24px;
+    color: #555;
+    padding-right: 30px;
+    text-align: center;
+}
+
+main section.third> :first-child ul li {
+    padding-left: 90px;
+    padding-right: 30px;
+}
+
+main section.third> :first-child ul li:nth-child(2) {
+    padding-left: 50px;
+}
+
+main section.third> :first-child ul li:nth-child(3) {
+    padding-left: 50px;
+}
+
+
+
+
+
+main section.fourth {
+    width: 100%;
+}
+
+main section.fourth>div> :first-child {
+    text-align: center;
+    margin-bottom: 40px;
+    color: rgb(16, 163, 127);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main section.fourth>div> :nth-child(2) {
+    text-align: center;
+    font-size: 52px;
+    color: rgb(23, 10, 69);
+}
+
+main section.fourth>div>p span {
+    color: rgb(174, 188, 188);
+}
+
+main section.fourth>div>p span span {
+    color: rgb(23, 10, 69);
+}
+
+main section.fourth>article {
+    width: 95%;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    padding-right: 60px;
+    height: 500px;
+    margin-bottom: 200px;
+}
+
+main section.fourth article> :nth-of-type(1) {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
+    gap: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 670px;
+}
+
+main section.fourth>article :nth-child(1)>div:nth-child(1) {
+    background-color: rgb(16, 163, 127);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(1) h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(1) h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(2) div>span:nth-child(1) {
+    font-size: 90px;
+    color: #555;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(2) div>span:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(2)>p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-left: 15px;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(3) ul li {
+    width: 120%;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(3) ul li:nth-child(6) {
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(3) ul li i {
+    color: rgb(19, 105, 228);
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(3) ul li:last-child i {
+    color: red;
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(4) a button {
+    padding: 10px 30px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16, 163, 127);
+    color: rgb(13, 100, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(4) a button:hover {
+    color: #fff;
+}
+
+main section.fourth>article :nth-child(1) div:nth-child(4) p {
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+}
+
+main section.fourth article> :nth-of-type(2) {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
+    gap: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 670px;
+}
+
+main section.fourth>article> :nth-child(2)>div:nth-child(1) {
+    background-color: rgb(16, 163, 127);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(1) h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(1) h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main section.fourth>article> :nth-child(2)>div:nth-child(1) span {
+    position: absolute;
+    left: -30px;
+    text-align: center;
+    background-color: #111;
+    top: 20px;
+    width: 150px;
+    transform: rotate(-35deg);
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(2) div span:nth-child(1) {
+    font-size: 90px;
+    color: #555;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(2) div span:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(2) p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-left: 15px;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(3) ul li {
+    width: 120%;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(3) ul li:nth-child(6) {
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(3) ul li i {
+    color: rgb(19, 105, 228);
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(3) ul li:last-child i {
+    color: red;
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(4) a button {
+    padding: 10px 30px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16, 163, 127);
+    color: rgb(13, 100, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(4) a button:hover {
+    color: #fff;
+}
+
+main section.fourth>article :nth-child(2) div:nth-child(4) p {
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+}
+
+main section.fourth article> :nth-of-type(3) {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
+    gap: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 670px;
+}
+
+main section.fourth>article> :nth-child(3)>div:nth-child(1) {
+    background-color: rgb(16, 163, 127);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(1) h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(1) h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(2) div span:nth-child(1) {
+    font-size: 90px;
+    color: #555;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(2) div span:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(2) p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-left: 15px;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(3) ul li {
+    width: 120%;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(3) ul li:nth-child(6) {
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(3) ul li i {
+    color: rgb(19, 105, 228);
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(3) ul li:last-child i {
+    color: red;
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(4) a button {
+    padding: 10px 30px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16, 163, 127);
+    color: rgb(13, 100, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(4) a button:hover {
+    color: #fff;
+}
+
+main section.fourth>article :nth-child(3) div:nth-child(4) p {
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+}
+
+main section.fourth article> :nth-of-type(4) {
+    display: grid;
+    grid-template-rows: 0.25fr 0.25fr 1fr 0.25fr;
+    gap: 20px;
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    height: 670px;
+}
+
+main section.fourth>article> :nth-child(4)>div:nth-child(1) {
+    background-color: rgb(16, 163, 127);
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(1) h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(1) h3 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(2)>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(2) div span:nth-child(1) {
+    font-size: 90px;
+    color: #555;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(2) div span:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(2) p {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-left: 15px;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(3) ul li {
+    width: 120%;
+    list-style: none;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    border-bottom: 2px solid #e1e1e1;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(3) ul li:nth-child(6) {
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(3) ul li i {
+    color: rgb(19, 105, 228);
+    font-size: 20px;
+    position: absolute;
+    right: 40px;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(3) ul li:last-child i {
+    color: red;
+    border-bottom: none;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(4) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(4) a button {
+    padding: 10px 30px;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: rgb(16, 163, 127);
+    color: rgb(13, 100, 79);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(4) a button:hover {
+    color: #fff;
+}
+
+main section.fourth>article :nth-child(4) div:nth-child(4) p {
+    font-size: 18px;
+    margin: 20px 0px 40px 0px;
+}
+
+main section.fifth {
+    width: 100%;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section.fifth> :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 50px;
+}
+
+main section.fifth> :nth-child(1) div {
+    margin: 40px;
+    border-radius: 20px;
+    border: 5px solid #e1e1e1;
+    position: relative;
+    padding: 40px;
+}
+
+main section.fifth> :nth-child(1) div img {
+    width: 40px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+main section.fifth> :nth-child(1) div span i {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-size: 24px;
+}
+
+main section.fifth> :nth-child(1) div h3 {
+    position: absolute;
+    top: 40px;
+    right: 90px;
+}
+
+main section.fifth> :nth-child(1) div h4 {
+    position: absolute;
+    top: 65px;
+    right: 90px;
+    font-size: 14px;
+    color: #888;
+}
+
+main section.fifth> :nth-child(1) div hr {
+    color: #999;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+main section.fifth> :nth-child(1) div p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+main section.fifth> :nth-child(1)> :nth-child(3) {
+    position: absolute;
+    right: 60px;
+    top: 170px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #cbcbcb;
+}
+
+main section.fifth> :nth-child(1)> :nth-child(4) {
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #cbcbcb;
+}
+
+main section.fifth> :nth-child(1) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+}
+
+main section.fifth> :nth-child(1) ul li {
+    cursor: pointer;
+    color: #999;
+    font-size: 20px;
+}
+
+main section.fifth> :nth-child(1) ul li.active {
+    color: #111;
+}
+
+
+main section.fifth> :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+
+main section.fifth> :nth-child(2) h2 {
+    color: rgb(13, 100, 79);
+    font-weight: bold;
+}
+
+
+main section.fifth> :nth-child(2) div p {
+    width: 60%;
+    position: absolute;
+    right: 130px;
+    top: 50px;
+    margin-left: 30px;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-style: italic;
+    color: #444;
+}
+
+main section.fifth> :nth-child(2) div img {
+    width: 50px;
+    height: 40px;
+    border-radius: 30px;
+    margin-left: 20px;
+    position: absolute;
+    right: 200px;
+    top: 205px;
+}
+
+main section.fifth> :nth-child(2) div :nth-child(3) {
+    position: absolute;
+    top: 205px;
+    right: 260px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main section.fifth> :nth-child(2) div :nth-child(4) {
+    position: absolute;
+    top: 230px;
+    right: 260px;
+}
+
+main section.fifth> :nth-child(2)>span:nth-child(3) {
+    position: absolute;
+    right: 60px;
+    top: 170px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #cbcbcb;
+}
+
+main section.fifth> :nth-child(2)>span:nth-child(4) {
+    position: absolute;
+    left: 60px;
+    top: 170px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #cbcbcb;
+}
+
+main section.fifth> :nth-child(2) ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    top: 300px;
+}
+
+main section.fifth> :nth-child(2) ul li.active {
+    color: #111;
+}
+
+.footer {
+    background-color: rgb(5, 90, 69);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    padding: 40px 70px 100px 40px;
+}
+
+.footer div:nth-child(1) ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 60px;
+    position: relative;
+}
+
+.footer div:nth-child(1) ul li {
+    font-size: 18px;
+    list-style: none;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer div:nth-child(1) ul li p i {
+    position: absolute;
+    right: 0;
+}
+
+.footer div:nth-child(1) ul li span {
+    margin-right: 30px;
+}
+
+.footer div:nth-child(1) ul li p {
+    margin-right: 30px;
+}
+
+.footer div:nth-child(2) ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 25px;
+}
+
+.footer div:nth-child(2) ul li {
+    list-style: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.footer div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.footer div:nth-child(3) img:nth-child(1) {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 30px;
+}
